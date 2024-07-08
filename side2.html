@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example - Main</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #165597;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            flex: 1;
+        }
+
+        .header-buttons {
+            margin-right: 1rem;
+        }
+
+        .header-buttons button {
+            margin-left: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-buttons button:hover {
+            background-color: #e2e6ea;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            background-color: #343a40;
+            width: 200px;
+            padding: 1rem;
+            color: white;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+        }
+
+        .sidebar nav ul li {
+            margin: 1rem 0;
+        }
+
+        .sidebar nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            display: block;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar nav ul li a:hover {
+            background-color: #495057;
+        }
+
+        .content {
+            flex: 1;
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">My Website</div>
+        <div class="header-buttons">
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='register.html'">Register</button>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="side1.html">Home</a></li>
+                    <li><a href="side2.html">About</a></li>
+                    <li><a href="side3.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <h1>About</h1>
+
+        </main>
+    </div>
+</body>
+</html>

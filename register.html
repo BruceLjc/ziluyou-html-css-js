@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .register-container {
+            background-color: white;
+            padding: 2rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .register-container h2 {
+            margin-bottom: 1rem;
+        }
+        .register-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .register-container form input {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        .register-container form button {
+            padding: 0.5rem;
+            background-color: #165597;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .register-container form button:hover {
+            background-color: #11487a;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
